@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Sign Up</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="signup.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <!--       navbar       -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+          
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">Admin</a>
+                    <a class="nav-item nav-link active" href="login.html">User</a>
+                    <a class="nav-item nav-link" href="#">About Us</a>
+                    <a class="nav-item nav-link" href="#">Contact Us</a>
+                   
+                  </div>
+                </div>
+              </nav>
+
+<!-- Registration Form   -->
+
+        <div class="container mt-5">
+                <form class="form-horizontal" role="form">
+                    <h1 style="text-align: center;color:papayawhip">Registration Form</h1>
+                    <br>
+
+                    <div class="form-group">
+                            <label style="color: oldlace" for="userName" class="col-sm-3 control-label">User Name*</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="userName" placeholder="User Name" class="form-control" autofocus>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                            <label style="color: oldlace" for="passsword" class="col-sm-3 control-label">Password*</label>
+                            <div class="col-sm-9">
+                                <input type="password" name="password" placeholder="Password" class="form-control" >
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                            <label style="color: oldlace" for="password" class="col-sm-6 control-label">Confirm Password*</label>
+                            <div class="col-sm-9">
+                                <input type="password" name="password" placeholder="Password" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                            <label style="color: oldlace" for="address" class="col-sm-3 control-label">Address*</label>
+                            <div class="col-sm-9">
+                                <textarea rows="5" name="address" placeholder="Address" class="form-control" ></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                            <label style="color: oldlace" for="city" class="col-sm-3 control-label">City*</label>
+                            <div class="col-sm-9">
+                                <input type="text" placeholder="City" class="form-control">
+                            </div>
+                        </div>
+
+                    <div class="form-group">
+                                <label style="color: oldlace" for="state" class="col-sm-3 control-label">State*</label>
+                                <div class="col-sm-9">
+                                    <input type="text" placeholder="State" class="form-control">
+                                </div>
+                            </div>
+
+                    <div class="form-group">
+                                    <label style="color: oldlace" for="country" class="col-sm-3 control-label">Country*</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" placeholder="Country" class="form-control">
+                                    </div>
+                                </div>   
+                                
+                    <div class="form-group">
+                                        <label style="color: oldlace" for="pincode" class="col-sm-3 control-label">Pin Code*</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" placeholder="Pin Code" class="form-control">
+                                        </div>
+                                    </div>                  
+                    
+                    <div class="form-group">
+                        <label style="color: oldlace" for="email" class="col-sm-3 control-label">Email* </label>
+                        <div class="col-sm-9">
+                            <input type="email" name="email" placeholder="Email" class="form-control">
+                        </div>
+                    </div>
+                   
+                    <div class="form-group">
+                            <label style="color: oldlace" class="control-label col-sm-3">Gender</label>
+                            <div class="col-sm-6">
+                             
+                                <input type="radio" name="gender" value="Male"><label style="color: oldlace" class="control-label col-sm-4">Male</label>
+                                <input type="radio" name="gender" value="Female"><label style="color: oldlace" class="control-label col-sm-4">Female</label>
+                           
+                            </div>
+                        </div>
+
+                    <div class="form-group">
+                                <label style="color: oldlace" for="contactNumber" class="col-sm-6 control-label">Contact Number </label>
+                                <div class="col-sm-9">
+                                    <input type="phoneNumber" name="contactNumber" placeholder="Contact Number" class="form-control">
+                                </div>
+                            </div>    
+                   
+                    <div class="form-group">
+                        <label style="color: oldlace" for="birthDate" class="col-sm-6 control-label">Date of Birth*</label>
+                        <div class="col-sm-9">
+                            <input type="date" id="birthDate" class="form-control">
+                        </div>
+                    </div>
+                   
+                    <!-- /.form-group -->
+                   
+                   
+                    <div class="form-group">
+                        <div class="col-sm-9 col-sm-offset-3">
+                            <span class="help-block">*Required fields</span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success btn-block">Register</button>
+                    <button type="reset" class="btn btn-primary btn-block">Reset</button>
+                </form> <!-- /form -->
+            </div> <!-- ./container -->
+
+
+
+
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+html,body{
+    background-image: url('images/home.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+ 
+    }
+
+    .card{
+        height: 450px;
+        margin-top: 50px;
+        
+        margin-right: 700px;
+        width: 400px;
+        background-color: rgba(0,0,0,0.5) !important;
+        }
