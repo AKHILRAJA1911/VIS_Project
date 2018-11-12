@@ -5,18 +5,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { HomePageComponent } from './home-page/home-page.component';
-import { UserloginComponent } from './userlogin/userlogin.component';
+import { UserLoginComponent } from './user-login/user-login.component';
+import {HttpClientModule} from '@angular/common/http';
+import { AddVehicleComponent } from './add-vehicle/add-vehicle.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     AdminLoginComponent,
     HomePageComponent,
-    UserloginComponent
+    UserLoginComponent,
+    AddVehicleComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+  
  
   ],
   providers: [],

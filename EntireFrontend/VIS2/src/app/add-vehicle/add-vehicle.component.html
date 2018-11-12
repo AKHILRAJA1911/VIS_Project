@@ -1,0 +1,237 @@
+ <!-- ==============   images =====================-->
+
+ <div class="row">
+  <img src="images/topimage.jpg" class="col-md-6" height="100%">
+  <img src="images/topimage2.jpg" class="col-md-6" height="100%">
+</div>
+
+<!--======================  links =======================-->
+
+
+<div class="container mt-5">
+<div class="d-flex justify-content-center h-100">
+<div class="btn-group btn-group-justified">
+    <div class="btn-group ">
+      <button id="new_policy" type="button" class="btn btn-primary rounded">New Policy</button>
+    </div>
+    <div class="btn-group col-md-4">
+      <button id="list_of_policies" type="button" class="btn btn-primary rounded">List Of Policies</button>
+    </div>
+    <div class="btn-group col-md-5">
+      <button id="update_policy" type="button" class="btn btn-primary rounded">Update Policy</button>
+    </div>
+    
+  </div>
+</div>
+</div>  
+
+
+<!--==================  Main Content  ========================--> 
+
+<div id="block" class="container mt-5">
+
+<form>
+<div class="container1">
+<!---heading---->
+    <header class="heading"> Vehicle-Registration</header><hr>
+ <!---Form starting----> 
+ <div class="row">
+  <!--- For Name---->
+     <div class="col-sm-12">
+            <div class="row justify-content-center">
+          
+              <div class="col-md-4"><label style="color: white" ><h5>Vehicle Owner Name :</h5></label> </div>
+            <div class="col-md-4">
+                <input type="text" name="vehicle_owner" id="vehicle_owner" placeholder="Enter Owner's Full Name" class="form-control ">
+            </div>
+         </div>
+    </div>            
+    
+    <!--- For State---->
+    <div class="col-sm-12 mt-3">
+      <div class="row justify-content-center">
+    
+        <div class="col-md-4"><label style="color: white" ><h5>Vehicle Registration State :</h5></label> </div>
+      <div class="col-md-4">
+          <select name="vehicle_registration_state" id="vehicle_registration_state" class="form-control ">
+
+
+<option value="null">--Select State--</option>
+<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+<option value="Andhra Pradesh">Andhra Pradesh</option>
+<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+<option value="Assam">Assam</option>
+<option value="Bihar">Bihar</option>
+<option value="Chandigarh">Chandigarh</option>
+<option value="Chhattisgarh">Chhattisgarh</option>
+<option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+<option value="Daman and Diu">Daman and Diu</option>
+<option value="Delhi">Delhi</option>
+<option value="Goa">Goa</option>
+<option value="Gujarat">Gujarat</option>
+<option value="Haryana">Haryana</option>
+<option value="Himachal Pradesh">Himachal Pradesh</option>
+<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+<option value="Jharkhand">Jharkhand</option>
+<option value="Karnataka">Karnataka</option>
+<option value="Kerala">Kerala</option>
+<option value="Lakshadweep">Lakshadweep</option>
+<option value="Madhya Pradesh">Madhya Pradesh</option>
+<option value="Maharashtra">Maharashtra</option>
+<option value="Manipur">Manipur</option>
+<option value="Meghalaya">Meghalaya</option>
+<option value="Mizoram">Mizoram</option>
+<option value="Nagaland">Nagaland</option>
+<option value="Orissa">Orissa</option>
+<option value="Pondicherry">Pondicherry</option>
+<option value="Punjab">Punjab</option>
+<option value="Rajasthan">Rajasthan</option>
+<option value="Sikkim">Sikkim</option>
+<option value="Tamil Nadu">Tamil Nadu</option>
+<option value="Telangana">Telangana</option>
+<option value="Tripura">Tripura</option>
+<option value="Uttaranchal">Uttaranchal</option>
+<option value="Uttar Pradesh">Uttar Pradesh</option>
+<option value="West Bengal">West Bengal</option>
+
+              </select>
+      </div>
+   </div>
+</div> 
+
+       <!--- For vehicle type---->
+       <div class="col-sm-12 mt-3">
+        <div class="row justify-content-center">
+      
+          <div class="col-md-4"><label style="color: white" ><h5>Vehicle Type :</h5></label> </div>
+        <div class="col-md-4">
+            <select name="vehicle_type" id="vehicle_type"  class="form-control ">
+              <option value="null">--Vehicle Type--</option>  
+              <option value="TW">Two Wheeler</option>
+              <option value="FW">Four Wheeler</option>
+              </select>
+
+        </div>
+     </div>
+</div>
+    
+          <!--- For vehicle class---->
+          <div class="col-sm-12 mt-3">
+              <div class="row justify-content-center">
+            
+                <div class="col-md-4"><label style="color: white" ><h5>Vehicle Class :</h5></label> </div>
+              <div class="col-md-4">
+                  <select name="vehicle_class" id="vehicle_class"  class="form-control ">
+                    <option value="null">--Vehicle Class--</option>  
+                    <option value="Own">Own</option>
+                    <option value="Others">For Public Facilities</option>
+                    </select>
+
+              </div>
+           </div>
+      </div>
+
+       <!--- For vehicle Manufacturer---->
+       <div class="col-sm-12 mt-3">
+          <div class="row justify-content-center">
+        
+            <div class="col-md-4"><label style="color: white" ><h5>Manufacturer :</h5></label> </div>
+          <div class="col-md-4">
+              <input type="text" name="manufacturer" id="manufacturer" placeholder="Manufacturer" class="form-control ">
+           
+          </div>
+       </div>
+  </div>
+
+      <!--- For vehicle Model---->
+      <div class="col-sm-12 mt-3">
+          <div class="row justify-content-center">
+        
+            <div class="col-md-4"><label style="color: white" ><h5>Model :</h5></label> </div>
+          <div class="col-md-4">
+              <input type="text" name="model" id="model" placeholder="Model Name" class="form-control ">
+           
+          </div>
+       </div>
+  </div>
+
+   <!--- For vehicle Engine Number---->
+   <div class="col-sm-12 mt-3">
+      <div class="row justify-content-center">
+    
+        <div class="col-md-4"><label style="color: white" ><h5>Engine Number :</h5></label> </div>
+      <div class="col-md-4">
+          <input type="text" name="engine_number" id="engine_number" placeholder="Engine Number" class="form-control ">
+       
+      </div>
+   </div>
+</div>
+
+
+<!--- For vehicle Make Year---->
+<div class="col-sm-12 mt-3">
+  <div class="row justify-content-center">
+
+    <div class="col-md-4"><label style="color: white" ><h5>Make Year :</h5></label> </div>
+  <div class="col-md-4">
+    <input type="text" name="make_year" id="make_year" placeholder="Vehicle Make Year" class="form-control ">
+   
+  </div>
+</div>
+</div>
+
+
+<!--- For vehicle Registration Location---->
+<div class="col-sm-12 mt-3">
+<div class="row justify-content-center">
+
+<div class="col-md-4"><label style="color: white" ><h5>Registration Location :</h5></label> </div>
+<div class="col-md-4">
+  <input type="text" name="registering_location" id="registering_location" placeholder="Registration Location" class="form-control ">
+
+</div>
+</div>
+</div>
+
+<!--- For vehicle DOP---->
+<div class="col-sm-12 mt-3">
+<div class="row justify-content-center">
+
+<div class="col-md-4"><label style="color: white" ><h5>Date Of Purchase :</h5></label> </div>
+<div class="col-md-4">
+<input type="date" name="date_of_purchase" id="date_of_purchase" placeholder="Date Of Purchase" class="form-control ">
+
+</div>
+</div>
+</div>
+
+<!--- For vehicle Price---->
+<div class="col-sm-12 mt-3">
+<div class="row justify-content-center">
+
+<div class="col-md-4"><label style="color: white" ><h5>Price :</h5></label> </div>
+<div class="col-md-4">
+<input type="text" name="price" id="price" placeholder="Price Of Vehicle" class="form-control ">
+
+</div>
+</div>
+</div>
+
+<div class="container mt-3 mb-3">
+            <button type="submit"  class=" btn btn-success btn-block">Register</button>
+            <button type="reset" class="btn btn-danger btn-block">Reset</button>
+
+          </div>
+
+
+
+
+
+
+  </div>	 
+
+</div>
+</form>
+</div>
+
+
