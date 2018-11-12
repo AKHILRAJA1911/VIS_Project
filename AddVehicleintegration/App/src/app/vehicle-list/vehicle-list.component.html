@@ -1,0 +1,43 @@
+<div class="card">
+    <div class="card-header">Policies</div>
+    <div class="card-body">
+    
+      <table class="table table-sm table-bordered">
+        <tr>
+        <th>Policy Id</th>
+        <th>Vehicle Owner</th>
+        <th>Vehicle Registration State</th>
+        <th>Vehicle Type</th>
+        <th>Vehicle Class</th>
+        <th>Manufacturer</th>
+        <th>Model</th>
+        <th>Engine Number</th>
+        <th>Make Year</th>
+        <th>Regiistering Location</th>
+        <th>Date Of Purchase</th>
+        <th>Price</th>
+        <th>Premium Amount</th>
+
+      </tr>
+      <tr *ngFor="let vehicle of vehicles">
+        <td>{{vehicle.policy_id}}</td>
+        <td>{{vehicle.Vehicle_Owner}}</td>
+        <td>{{vehicle.Vehicle_Registration_State}}</td>
+        <td>{{vehicle.Vehicle_Type}}</td>
+        <td>{{vehicle.Vehicle_Class}}</td>
+        <td>{{vehicle.Manufacturer}}</td>
+        <td>{{vehicle.Model}}</td>
+        <td>{{vehicle.Engine_Number}}</td>
+        <td>{{vehicle.Make_Year}}</td>
+        <td>{{vehicle.Registering_Location}}</td>
+        <td>{{vehicle.Date_Of_Purchase}}</td>
+        <td>{{vehicle.Price}}</td>
+        <td>{{vehicle.Premium_amount}}</td>
+      </tr>
+    
+      </table>
+    
+    </div>
+    
+    </div>
+   
