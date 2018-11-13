@@ -3,7 +3,7 @@
 @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 body{
-    background-image: url(assets/images/home.jpg);
+    background: url(assets/images/login.jpg) fixed;
     background-repeat: no-repeat;
     background-size:cover ;
 

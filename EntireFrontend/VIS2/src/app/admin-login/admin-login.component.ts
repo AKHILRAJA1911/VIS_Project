@@ -1,15 +1,29 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { VehicleService } from '../vehicle.service';
+import { AdminLogin } from '../models/AdminLogin';
 
 @Component({
   selector: 'app-admin-login',
   templateUrl: './admin-login.component.html',
   styleUrls: ['./admin-login.component.css']
 })
-export class AdminLoginComponent implements OnInit {
+export class AdminLoginComponent{
 
-  constructor() { }
+  adlogin:AdminLogin=new AdminLogin();
 
-  ngOnInit() {
+  
+  constructor(private router: Router,private vs:VehicleService) { }
+
+  tryLogin():void {
+    this.vs.tryLogin(this.adlogin)
+      .subscribe(data => {
+          alert("Logged in Successfully");
+          this.router.navigateByUrl('vehiclereg');
+        },
+        data => {
+          alert("Invalid Credentials");
+        });
   }
 
 }
