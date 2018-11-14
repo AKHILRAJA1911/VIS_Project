@@ -51,5 +51,14 @@ export class VehicleService {
    return this.http.post('http://localhost:1212/vims/customer/login',customer,  { responseType: 'text' as 'text'});
  }
 
+ // Direct Pay
+ public direct(directpay){
+  return this.http.post('http://localhost:1212/vims/directpay/save',directpay, { responseType: 'text' as 'text'});
+ }
+
+
+
+
+
 
 }

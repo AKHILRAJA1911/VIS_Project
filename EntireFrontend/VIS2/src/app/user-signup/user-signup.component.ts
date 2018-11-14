@@ -20,7 +20,7 @@ userlogin(){
 this.vs.userlogin(this.customer)
 .subscribe( data => {
 alert(data);
-  alert("User created successfully.");
+  
 this.route.navigate(['user'])});
 }
 

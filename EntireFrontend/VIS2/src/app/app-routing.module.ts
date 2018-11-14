@@ -12,6 +12,7 @@ import { UserMainpageComponent } from './user-mainpage/user-mainpage.component';
 import { DirectPayComponent } from './direct-pay/direct-pay.component';
 import { RegisteredPayComponent } from './registered-pay/registered-pay.component';
 import { PaidDetailsComponent } from './paid-details/paid-details.component';
+import { RegPaiddetailsComponent } from './reg-paiddetails/reg-paiddetails.component';
 
 
 const routes: Routes = [
@@ -26,7 +27,8 @@ const routes: Routes = [
   {path:'usermain',component:UserMainpageComponent},
   {path:'directpay',component:DirectPayComponent},
   {path:'registeredpay',component:RegisteredPayComponent},
-  {path:'paiddetails',component:PaidDetailsComponent}
+  {path:'paiddetails',component:PaidDetailsComponent},
+  {path:'regpaiddetails',component:RegPaiddetailsComponent}
   
 ];
 @NgModule({

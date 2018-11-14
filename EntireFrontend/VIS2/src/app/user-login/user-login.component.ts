@@ -24,7 +24,7 @@ login(){
       .subscribe(data => {
         if(data=='login successful')
         {
-          alert("Logged in Successfully");
+         
           this.route.navigate(['usermain']);}
           else{
             if(data=='Customer not found'){

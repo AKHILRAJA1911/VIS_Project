@@ -20,7 +20,7 @@ export class AdminLoginComponent{
       .subscribe(data => {
         if(data=='login successful')
         {
-          alert("Logged in Successfully");
+          
           this.router.navigateByUrl('vehiclereg');}
           else{
             alert("Invalid Credentials");

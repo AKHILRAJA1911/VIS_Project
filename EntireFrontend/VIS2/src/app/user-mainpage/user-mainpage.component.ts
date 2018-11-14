@@ -22,6 +22,12 @@ paiddetails(){
 this.route.navigate(['paiddetails']);
 }
 
+regpaiddetails(){
+  this.route.navigate(['regpaydetails']);
+}
+
+
+
 
 
 

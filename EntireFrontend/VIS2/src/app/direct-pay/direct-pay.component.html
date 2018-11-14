@@ -12,9 +12,9 @@
                <div class="col-sm-12 mt-3">
                       <div class="row justify-content-center">
                     
-                        <div class="col-md-4"><label style="color: white" ><h5>Policy Id :</h5></label> </div>
+                        <div class="col-md-4"><label style="color: white" ><h5>*Policy Id :</h5></label> </div>
                       <div class="col-md-4">
-                          <input type="text" [(ngModel)]="directpay.policyId" name="policyId" id="policyId" placeholder="Policy Id" class="form-control ">
+                          <input type="text" [(ngModel)]="directpay.policy_id" name="policy_id" id="policyId" placeholder="Policy Id" class="form-control " required>
                       </div>
                    </div>
               </div>  
@@ -23,9 +23,9 @@
                <div class="col-sm-12 mt-3">
                   <div class="row justify-content-center">
                 
-                    <div class="col-md-4"><label style="color: white" ><h5>Premium Amount :</h5></label> </div>
+                    <div class="col-md-4"><label style="color: white" ><h5>*Premium Amount :</h5></label> </div>
                   <div class="col-md-4">
-                      <input type="text" [(ngModel)]="directpay.premiumAmount" name="premiumAmount" id="premiumAmount" placeholder="Premium Amount" class="form-control ">
+                      <input type="text" [(ngModel)]="directpay.premium_amount" name="premium_amount" id="premiumAmount" placeholder="Premium Amount" class="form-control ">
                   </div>
                </div>
           </div>            
@@ -36,9 +36,9 @@
        <div class="col-sm-12 mt-3">
           <div class="row justify-content-center">
         
-            <div class="col-md-4"><label style="color: white" ><h5>Payment Date :</h5></label> </div>
+            <div class="col-md-4"><label style="color: white" ><h5>*Payment Date :</h5></label> </div>
           <div class="col-md-4">
-              <input type="date" [(ngModel)]="directpay.paymentDate" name="paymentDate" id="paymentDate" placeholder="Payment Date" class="form-control ">
+              <input type="date" [(ngModel)]="directpay.payment_date" name="payment_date" id="paymentDate" placeholder="Payment Date" class="form-control ">
           </div>
        </div>
   </div>            
@@ -47,9 +47,9 @@
    <div class="col-sm-12 mt-3">
       <div class="row justify-content-center">
     
-        <div class="col-md-4"><label style="color: white" ><h5>Payment Mode :</h5></label> </div>
+        <div class="col-md-4"><label style="color: white" ><h5>*Payment Mode :</h5></label> </div>
       <div class="col-md-4">
-          <select [(ngModel)]="directpay.paymentMode" name="paymentMode" id="paymentMode"  class="form-control ">
+          <select [(ngModel)]="directpay.payment_mode" name="payment_mode" id="paymentMode"  class="form-control ">
               <option value="null">--Payment Mode--</option>
               <option value="Debit Card">Debit Card</option>  
               <option value="Credit Card">Credit Card</option>
@@ -63,7 +63,7 @@
 
 
 <div class="container mt-3 mb-3">
-  <button type="submit"  class=" btn btn-success btn-block">Pay</button>
+  <button type="submit" (click)="direct()" class=" btn btn-success btn-block">Pay</button>
   <button type="reset" class="btn btn-danger btn-block">Reset</button>
 
 </div>

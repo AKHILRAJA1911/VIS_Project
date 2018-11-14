@@ -18,7 +18,7 @@ export class AddVehicleComponent {
     this.vs.createPolicy(this.vehicle)
         .subscribe( data => {
         alert(data);
-          alert("User created successfully.");
+          
         });
 
   };
