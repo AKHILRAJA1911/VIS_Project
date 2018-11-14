@@ -11,6 +11,11 @@ import { AddVehicleComponent } from './add-vehicle/add-vehicle.component';
 import { VehicleService } from './vehicle.service';
 import { VehicleRegComponent } from './vehicle-reg/vehicle-reg.component';
 import { VehicleListComponent } from './vehicle-list/vehicle-list.component';
+import { UserSignupComponent } from './user-signup/user-signup.component';
+import { UserMainpageComponent } from './user-mainpage/user-mainpage.component';
+import { DirectPayComponent } from './direct-pay/direct-pay.component';
+import { RegisteredPayComponent } from './registered-pay/registered-pay.component';
+import { PaidDetailsComponent } from './paid-details/paid-details.component';
 
 
 @NgModule({
@@ -21,7 +26,12 @@ import { VehicleListComponent } from './vehicle-list/vehicle-list.component';
     UserLoginComponent,
     AddVehicleComponent,
     VehicleRegComponent,
-    VehicleListComponent
+    VehicleListComponent,
+    UserSignupComponent,
+    UserMainpageComponent,
+    DirectPayComponent,
+    RegisteredPayComponent,
+    PaidDetailsComponent
   ],
   imports: [
     BrowserModule,

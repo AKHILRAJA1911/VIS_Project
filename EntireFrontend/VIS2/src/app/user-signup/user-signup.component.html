@@ -1,0 +1,125 @@
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+   
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav navbar-fixed-top">
+        <a class="nav-item nav-link" [routerLink]="['']">Home</a>
+        <a class="nav-item nav-link" [routerLink]="['admin']">Admin</a>
+        <a class="nav-item nav-link" [routerLink]="['user']">User</a>
+        <a class="nav-item nav-link" href="#">About Us</a>
+        <a class="nav-item nav-link" href="#">Contact Us</a>
+   
+       
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="container mt-5">
+    <form class="form-horizontal" role="form" action="userlogin.html">
+        <h1 style="text-align: center;color:papayawhip">Registration Form</h1>
+        <br>
+
+        <div class="form-group">
+                <label style="color: oldlace" for="userName" class="col-sm-3 control-label">User Name*</label>
+                <div class="col-sm-9">
+                    <input type="text" name="username" [(ngModel)]="customer.username" placeholder="User Name" class="form-control" autofocus required>
+            </div>
+        </div>
+
+        <div class="form-group">
+                <label style="color: oldlace" for="passsword" class="col-sm-3 control-label">Password*</label>
+                <div class="col-sm-9">
+                    <input type="password" name="password" [(ngModel)]="customer.password" placeholder="Password" class="form-control" required >
+            </div>
+        </div>
+
+        <div class="form-group">
+                <label style="color: oldlace" for="password" class="col-sm-6 control-label">Confirm Password*</label>
+                <div class="col-sm-9">
+                    <input type="password" name="password" [(ngModel)]="customer.password" placeholder="Password" class="form-control" required>
+            </div>
+        </div>
+
+        <div class="form-group">
+                <label style="color: oldlace" for="address" class="col-sm-3 control-label">Address*</label>
+                <div class="col-sm-9">
+                    <textarea rows="5" name="address" [(ngModel)]="customer.address" placeholder="Address" class="form-control" required></textarea>
+            </div>
+        </div>
+
+        <div class="form-group">
+                <label style="color: oldlace" for="city" class="col-sm-3 control-label">City*</label>
+                <div class="col-sm-9">
+                    <input type="text" name="city" placeholder="City" [(ngModel)]="customer.city" class="form-control" required>
+                </div>
+            </div>
+
+        <div class="form-group">
+                    <label style="color: oldlace" for="state" class="col-sm-3 control-label">State*</label>
+                    <div class="col-sm-9">
+                        <input type="text" name="state" [(ngModel)]="customer.state" placeholder="State" class="form-control" required>
+                    </div>
+                </div>
+
+        <div class="form-group">
+                        <label style="color: oldlace" for="country" class="col-sm-3 control-label">Country*</label>
+                        <div class="col-sm-9">
+                            <input type="text" name="country" [(ngModel)]="customer.country" placeholder="Country" class="form-control" required>
+                        </div>
+                    </div>   
+                    
+        <div class="form-group">
+                            <label style="color: oldlace" for="pincode" class="col-sm-3 control-label">Pin Code*</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="pincode" [(ngModel)]="customer.pincode" placeholder="Pin Code" class="form-control" required>
+                            </div>
+                        </div>                  
+        
+        <div class="form-group">
+            <label style="color: oldlace" for="email" class="col-sm-3 control-label">Email* </label>
+            <div class="col-sm-9">
+                <input type="email" name="email_id" [(ngModel)]="customer.email_id" placeholder="Email" class="form-control" required>
+            </div>
+        </div>
+       
+        <div class="form-group">
+                <label style="color: oldlace" class="control-label col-sm-3">Gender</label>
+                <div class="col-sm-6">
+                 
+                    <input type="radio" name="gender" [(ngModel)]="customer.gender" value="Male"><label style="color: oldlace" class="control-label col-sm-4">Male</label>
+                    <input type="radio" name="gender" [(ngModel)]="customer.gender" value="Female"><label style="color: oldlace" class="control-label col-sm-4">Female</label>
+               
+                </div>
+            </div>
+
+        <div class="form-group">
+                    <label style="color: oldlace" for="contactNumber" class="col-sm-6 control-label">Contact Number </label>
+                    <div class="col-sm-9">
+                        <input type="phoneNumber" name="contact_number" [(ngModel)]="customer.contact_number" placeholder="Contact Number" class="form-control" required>
+                    </div>
+                </div>    
+       
+        <div class="form-group">
+            <label style="color: oldlace" for="birthDate" class="col-sm-6 control-label">Date of Birth*</label>
+            <div class="col-sm-9">
+                <input type="date" name="date_of_birth" [(ngModel)]="customer.date_of_birth" id="birthDate" class="form-control" required>
+            </div>
+        </div>
+       
+        <!-- /.form-group -->
+       
+       
+        <div class="form-group">
+            <div class="col-sm-9 col-sm-offset-3">
+                <span style="color:aliceblue" class="help-block">*Required fields</span>
+            </div>
+        </div>
+        <button type="submit" (click)="userlogin()" class="btn btn-success btn-block">Register</button>
+        <button type="reset" class="btn btn-primary btn-block">Reset</button>
+    </form> <!-- /form -->
+</div> <!-- ./container -->

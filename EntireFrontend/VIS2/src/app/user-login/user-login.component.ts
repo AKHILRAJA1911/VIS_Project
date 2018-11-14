@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Customer } from '../models/customer';
+import { VehicleService } from '../vehicle.service';
 
 @Component({
   selector: 'app-user-login',
@@ -7,7 +10,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserLoginComponent implements OnInit {
 
-  constructor() { }
+  customer:Customer=new Customer();
+  
+  constructor(private route:Router,private vs:VehicleService) { }
+
+
+signup(){
+  this.route.navigate(['signup']);
+}
+
+login(){
+     this.vs.login(this.customer)
+      .subscribe(data => {
+        if(data=='login successful')
+        {
+          alert("Logged in Successfully");
+          this.route.navigate(['usermain']);}
+          else{
+            if(data=='Customer not found'){
+              alert(data);
+            }
+
+         
+          }
+        },
+      );
+}
+
 
   ngOnInit() {
   }

@@ -17,14 +17,24 @@
        <!---Form starting--> 
        <div class="row">
     
+        <!--- For Customer id-->
+        <div class="col-sm-12">
+          <div class="row justify-content-center">
         
+            <div class="col-md-4"><label style="color: white" ><h5>Customer Id :</h5></label> </div>
+          <div class="col-md-4">
+              <input type="text" name="customer_id" [(ngModel)]="vehicle.customer_id" placeholder="Enter customer_id" class="form-control ">
+          </div>
+       </div>
+  </div> 
+
         <!--- For Name-->
-           <div class="col-sm-12">
+           <div class="col-sm-12 mt-3">
                   <div class="row justify-content-center">
                 
                     <div class="col-md-4"><label style="color: white" ><h5>Vehicle Owner Name :</h5></label> </div>
                   <div class="col-md-4">
-                      <input type="text" name="Vehicle_Owner" [(ngModel)]="vehicle.vehicle_Owner" placeholder="Enter Owner's Full Name" class="form-control ">
+                      <input type="text" name="Vehicle_Owner" [(ngModel)]="vehicle.vehicle_owner" placeholder="Enter Owner's Full Name" class="form-control ">
                   </div>
                </div>
           </div>            
@@ -35,7 +45,7 @@
           
               <div class="col-md-4"><label style="color: white" ><h5>Vehicle Registration State :</h5></label> </div>
             <div class="col-md-4">
-                <select name="Vehicle_Registration_State" [(ngModel)]="vehicle.vehicle_Registration_State" class="form-control ">
+                <select name="Vehicle_Registration_State" [(ngModel)]="vehicle.vehicle_state" class="form-control ">
     
     
     <option value="null" selected="selected">--Select State--</option>
@@ -87,7 +97,7 @@
             
                 <div class="col-md-4"><label style="color: white" ><h5>Vehicle Type :</h5></label> </div>
               <div class="col-md-4">
-                  <select name="Vehicle_Type" [(ngModel)]="vehicle.vehicle_Type"  class="form-control ">
+                  <select name="Vehicle_Type" [(ngModel)]="vehicle.vehicle_type"  class="form-control ">
                     <option value="null" selected="selected">--Vehicle Type--</option>  
                     <option value="TW">Two Wheeler</option>
                     <option value="FW">Four Wheeler</option>
@@ -103,7 +113,7 @@
                   
                       <div class="col-md-4"><label style="color: white" ><h5>Vehicle Class :</h5></label> </div>
                     <div class="col-md-4">
-                        <select name="Vehicle_Class" [(ngModel)]="vehicle.vehicle_Class"  class="form-control ">
+                        <select name="Vehicle_Class" [(ngModel)]="vehicle.vehicle_class"  class="form-control ">
                           <option value="null" selected="selected">--Vehicle Class--</option>  
                           <option value="Own">Own</option>
                           <option value="Others">For Public Facilities</option>
@@ -143,7 +153,7 @@
           
               <div class="col-md-4"><label style="color: white" ><h5>Engine Number :</h5></label> </div>
             <div class="col-md-4">
-                <input type="text" name="Engine_Number" [(ngModel)]="vehicle.engine_Number" placeholder="Engine Number" class="form-control ">
+                <input type="text" name="Engine_Number" [(ngModel)]="vehicle.engine_number" placeholder="Engine Number" class="form-control ">
              
             </div>
          </div>
@@ -156,7 +166,7 @@
       
           <div class="col-md-4"><label style="color: white" ><h5>Make Year :</h5></label> </div>
         <div class="col-md-4">
-          <input type="text" name="Make_Year" [(ngModel)]="vehicle.make_Year" placeholder="Vehicle Make Year" class="form-control ">
+          <input type="text" name="Make_Year" [(ngModel)]="vehicle.make_year" placeholder="Vehicle Make Year" class="form-control ">
          
         </div>
      </div>
@@ -169,7 +179,7 @@
     
       <div class="col-md-4"><label style="color: white" ><h5>Registration Location :</h5></label> </div>
     <div class="col-md-4">
-        <input type="text" name="Registering_Location" [(ngModel)]="vehicle.registering_Location" placeholder="Registration Location" class="form-control ">
+        <input type="text" name="Registering_Location" [(ngModel)]="vehicle.registering_location" placeholder="Registration Location" class="form-control ">
      
     </div>
     </div>
@@ -181,7 +191,7 @@
     
     <div class="col-md-4"><label style="color: white" ><h5>Date Of Purchase :</h5></label> </div>
     <div class="col-md-4">
-      <input type="date" name="Date_Of_Purchase" [(ngModel)]="vehicle.date_Of_Purchase" placeholder="Date Of Purchase" class="form-control ">
+      <input type="date" name="Date_Of_Purchase" [(ngModel)]="vehicle.date_of_purchase" placeholder="Date Of Purchase" class="form-control ">
     
     </div>
     </div>

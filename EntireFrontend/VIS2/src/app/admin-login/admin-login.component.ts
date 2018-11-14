@@ -18,12 +18,15 @@ export class AdminLoginComponent{
   tryLogin():void {
     this.vs.tryLogin(this.adlogin)
       .subscribe(data => {
+        if(data=='login successful')
+        {
           alert("Logged in Successfully");
-          this.router.navigateByUrl('vehiclereg');
+          this.router.navigateByUrl('vehiclereg');}
+          else{
+            alert("Invalid Credentials");
+          }
         },
-        data => {
-          alert("Invalid Credentials");
-        });
+      );
   }
 
 }
