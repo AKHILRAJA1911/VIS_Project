@@ -1,0 +1,80 @@
+
+<app-user-mainpage></app-user-mainpage>
+
+<div id="block" class="mt-5">
+
+    
+   
+ 
+    <div class="container1">
+      <!---heading-->
+
+      
+          <form (ngSubmit)="onSubmit()">
+              <div class="">
+                  <div class="row justify-content-center">
+                
+                    <div class="col-md-2 mt-4"><label style="color: white" ><h5>Customer Id:</h5></label> </div>
+                  <div class="mt-4">
+                      <input type="text" name="customer_id" [(ngModel)]="customer_id" placeholder="Enter your Customer Id" class="form-control " required>
+                  </div>
+               </div>
+          </div>            
+          
+         
+            <div class="btn-group mt-3">
+              <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+          </form>
+        
+
+          <header class="heading">List of Policies</header><hr>
+          <div class="card">
+              <div class="card-header"></div>
+              <div class="card-body">
+    
+                <table class="table table-responsive table-sm table-bordered ">
+  
+     
+      <tr>
+       
+          <th>Customer Id</th>
+                <th>Policy Id</th>
+                <th>Vehicle Owner</th>
+                <th>Vehicle Registration State</th>
+                <th>Vehicle Type</th>
+                <th>Vehicle Class</th>
+                <th>Manufacturer</th>
+                <th>Model</th>
+                <th>Engine Number</th>
+                <th>Make Year</th>
+                <th>Regiistering Location</th>
+                <th>Date Of Purchase</th>
+                <th>Price</th>
+                <th>Premium Amount</th>
+        
+              </tr>
+              <tr *ngFor="let vehicle of vehicles">
+                <td>{{vehicle.customer_id}}</td>
+                <td>{{vehicle.policy_id}}</td>
+                <td>{{vehicle.vehicle_owner}}</td>
+                <td>{{vehicle.vehicle_state}}</td>
+                <td>{{vehicle.vehicle_type}}</td>
+                <td>{{vehicle.vehicle_class}}</td>
+                <td>{{vehicle.manufacturer}}</td>
+                <td>{{vehicle.model}}</td>
+                <td>{{vehicle.engine_number}}</td>
+                <td>{{vehicle.make_year}}</td>
+                <td>{{vehicle.registering_location}}</td>
+                <td>{{vehicle.date_of_purchase}}</td>
+                <td>{{vehicle.price}}</td>
+                <td>{{vehicle.premium_amount}}</td>
+              </tr>
+            
+     
+    </table>
+    </div>
+    </div>
+    </div>
+    </div>
+    

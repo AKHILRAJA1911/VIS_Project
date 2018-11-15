@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+    
+        <a class="nav-item nav-link" (click)="paypremium()" >Pay Premium</a>
+        <a class="nav-item nav-link active" (click)="claimpolicy()">Claim Policy</a>
+        <a class="nav-item nav-link" (click)="cancelpolicy()">Cancel Policy</a>
+        <a class="nav-item nav-link" [routerLink]="['']">Logout</a>
+       
+      </div>
+    </div>
+  </nav>
+
+  <!--==============Links==========================-->
+
+
+  <div class="container mt-5">
+      <div class="d-flex justify-content-center h-100">
+        <div class="row btn-group btn-group-justified">
+            <div class="btn-group mt-3 ">
+              <button  (click)="accident()" class="btn btn-primary rounded">Accident Claim</button>
+            </div>
+            <div class="btn-group ml-4 mt-3">
+              <button  (click)="theft()" class="btn btn-primary rounded">Theft Claim</button>
+            </div>
+            <div class="btn-group ml-4 mt-3">
+                  <button (click)="accidentlist()" class="btn btn-primary rounded">Accident Claim List</button>
+                </div>
+                <div class="btn-group ml-4 mt-3">
+                    <button (click)="theftlist()" class="btn btn-primary rounded">Theft Claim List</button>
+                  </div>
+            
+          </div>
+      </div>
+    </div> 

@@ -20,7 +20,7 @@
 
 
   <div class="container mt-5">
-    <form class="form-horizontal" role="form" action="userlogin.html">
+    <form class="form-horizontal" role="form">
         <h1 style="text-align: center;color:papayawhip">Registration Form</h1>
         <br>
 
@@ -38,40 +38,80 @@
             </div>
         </div>
 
-        <div class="form-group">
-                <label style="color: oldlace" for="password" class="col-sm-6 control-label">Confirm Password*</label>
-                <div class="col-sm-9">
-                    <input type="password" name="password" [(ngModel)]="customer.password" placeholder="Password" class="form-control" required>
-            </div>
-        </div>
+       
+    
 
-        <div class="form-group">
-                <label style="color: oldlace" for="address" class="col-sm-3 control-label">Address*</label>
-                <div class="col-sm-9">
-                    <textarea rows="5" name="address" [(ngModel)]="customer.address" placeholder="Address" class="form-control" required></textarea>
-            </div>
-        </div>
-
-        <div class="form-group">
-                <label style="color: oldlace" for="city" class="col-sm-3 control-label">City*</label>
-                <div class="col-sm-9">
-                    <input type="text" name="city" placeholder="City" [(ngModel)]="customer.city" class="form-control" required>
-                </div>
-            </div>
+            <div class="form-group">
+                    <label style="color: oldlace" for="country" class="col-sm-3 control-label">Country*</label>
+                    <div class="col-sm-9">
+                        <select name="country" [(ngModel)]="customer.country"  class="form-control" required>
+                            <option value="India">India</option>
+                            </select>
+                    </div>
+                </div>  
 
         <div class="form-group">
                     <label style="color: oldlace" for="state" class="col-sm-3 control-label">State*</label>
                     <div class="col-sm-9">
-                        <input type="text" name="state" [(ngModel)]="customer.state" placeholder="State" class="form-control" required>
+                        <select name="state" [(ngModel)]="customer.state" class="form-control" required>
+                                <option value="null" selected="selected">--Select State--</option>
+                                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                <option value="Assam">Assam</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Chandigarh">Chandigarh</option>
+                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+                                <option value="Daman and Diu">Daman and Diu</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                <option value="Jharkhand">Jharkhand</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Lakshadweep">Lakshadweep</option>
+                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Manipur">Manipur</option>
+                                <option value="Meghalaya">Meghalaya</option>
+                                <option value="Mizoram">Mizoram</option>
+                                <option value="Nagaland">Nagaland</option>
+                                <option value="Orissa">Orissa</option>
+                                <option value="Pondicherry">Pondicherry</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Sikkim">Sikkim</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Tripura">Tripura</option>
+                                <option value="Uttaranchal">Uttaranchal</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="West Bengal">West Bengal</option>
+                               </select> 
                     </div>
                 </div>
 
-        <div class="form-group">
-                        <label style="color: oldlace" for="country" class="col-sm-3 control-label">Country*</label>
+
+                <div class="form-group">
+                        <label style="color: oldlace" for="city" class="col-sm-3 control-label">City*</label>
                         <div class="col-sm-9">
-                            <input type="text" name="country" [(ngModel)]="customer.country" placeholder="Country" class="form-control" required>
+                            <input type="text" name="city" placeholder="City" [(ngModel)]="customer.city" class="form-control" required>
                         </div>
-                    </div>   
+                    </div>
+
+                <div class="form-group">
+                        <label style="color: oldlace" for="address" class="col-sm-3 control-label">Address*</label>
+                        <div class="col-sm-9">
+                            <textarea rows="5" name="address" [(ngModel)]="customer.address" placeholder="Address" class="form-control" required></textarea>
+                    </div>
+                </div>
+        
+              
+        
                     
         <div class="form-group">
                             <label style="color: oldlace" for="pincode" class="col-sm-3 control-label">Pin Code*</label>
@@ -122,4 +162,5 @@
         <button type="submit" (click)="userlogin()" class="btn btn-success btn-block">Register</button>
         <button type="reset" class="btn btn-primary btn-block">Reset</button>
     </form> <!-- /form -->
+ 
 </div> <!-- ./container -->

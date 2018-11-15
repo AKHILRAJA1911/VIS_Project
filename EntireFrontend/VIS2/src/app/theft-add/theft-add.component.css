@@ -1,0 +1,46 @@
+.card{
+    height: 320px;
+margin-top: auto;
+margin-bottom: auto;
+width: 320px;
+background-color: rgba(84, 84, 85, 0.5) !important;
+      }
+
+.bg-color{
+    background-color: rgba(0,0,0,0.5) !important;
+    color:white;
+}
+
+.text-color{
+    color:white;
+    text-align: center;
+}
+
+
+/*-----Background-----*/
+
+
+
+/*-----for border----*/
+.container1{
+   background-image:url('../../assets/images/vehicleregister.jpg') ;
+   border-style: 1px solid grey;
+   text-align: center;
+   opacity: 0.8;
+   box-shadow: 2px 5px 5px 0px #eee;
+    
+}
+/*--- for label of first and last name---*/
+
+     
+
+/*---for heading-----*/
+.heading{
+    text-decoration:bold;
+    text-align : center;
+    font-size:30px;
+    color:#F96;
+    padding-top:10px;
+}
+/*-------for email----------*/
+ /*------label----*/

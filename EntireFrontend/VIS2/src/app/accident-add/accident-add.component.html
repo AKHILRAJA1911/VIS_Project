@@ -1,0 +1,108 @@
+
+<app-claim-mainpage></app-claim-mainpage>
+
+<div id="block" class="container mt-5">
+
+
+
+    <form>
+          <div class="container1">
+
+              <form>
+                  <div class="">
+                      <div class="row justify-content-center">
+                    
+                        <div class="col-md-2 mt-4"><label style="color: white" ><h5>Policy Id:</h5></label> </div>
+                      <div class="mt-4">
+                          <input type="text" name="policy_id" [(ngModel)]="accident.policy_id" placeholder="Enter your Policy Id" class="form-control " required>
+                      </div>
+                   </div>
+              </div>            
+              
+             
+                <div class="btn-group mt-3">
+                  <button type="submit" (click)="accidentcheck()" class="btn btn-success">Submit</button>
+                </div>
+              </form>
+
+
+            <!---heading-->
+                <header class="heading"> Accident Claim</header><hr>
+             <!---Form starting--> 
+             <div class="row">
+
+              <!--- For Customer Id-->
+              <div class="col-sm-12">
+                  <div class="row justify-content-center">
+                
+                    <div class="col-md-4"><label style="color: white" ><h5>Customer Id :</h5></label> </div>
+                  <div class="col-md-4">
+                      <input type="text" [(ngModel)]="accident.customer_id" name="customer_id"  placeholder="Customer Id" class="form-control " required>
+                  </div>
+               </div>
+          </div>  
+          
+
+
+
+              <!--- For Policy Id-->
+                 <div class="col-sm-12 mt-3">
+                        <div class="row justify-content-center">
+                      
+                          <div class="col-md-4"><label style="color: white" ><h5>Policy Id :</h5></label> </div>
+                        <div class="col-md-4">
+                            <input type="text" [(ngModel)]="accident.policy_id" name="policy_id"  placeholder="Policy Id" class="form-control " required>
+                        </div>
+                     </div>
+                </div>  
+                
+                        
+
+             <!--- For total_amount-->
+             <div class="col-sm-12 mt-3">
+                <div class="row justify-content-center">
+              
+                  <div class="col-md-4"><label style="color: white" ><h5>Total Amount :</h5></label> </div>
+                <div class="col-md-4">
+                    <input type="text" [(ngModel)]="accident.total_amount" name="total_amount"  placeholder="Total Amount" class="form-control " required>
+                </div>
+             </div>
+        </div>            
+
+         
+    
+     <!--- For accident_type-->
+     <div class="col-sm-12 mt-3">
+        <div class="row justify-content-center">
+      
+          <div class="col-md-4"><label style="color: white"><h5>Accident Type :</h5></label> </div>
+        <div class="col-md-4">
+            <select [(ngModel)]="accident.accident_type" name="accident_type" class="form-control ">
+                <option value="null">--Accident Type--</option>
+                <option value="fire">Fire</option>  
+                <option value="Road Accident">Road Accident</option>
+                <option value="Malicious Acts">Malicious Acts</option>
+                <option value="Self-destruction">Self-destruction</option>
+                <option value="Part Failure">Part Failure</option>
+                </select>
+        </div>
+     </div>
+</div>            
+
+
+<div class="container mt-3 mb-3">
+    <button type="submit" (click)="saveaccident()" class=" btn btn-success btn-block">Claim</button>
+    <button type="reset" class="btn btn-danger btn-block">Reset</button>
+
+  </div>
+
+
+
+
+
+
+</div>	 
+
+</div>
+</form>  
+</div>     

@@ -2,10 +2,29 @@
 
 <div id="block" class="container mt-5">
 
+
+   
+
   <form>
         <div class="container1">
+
+            <form>
+                <div>
+                    <div class="row justify-content-center">
+                  
+                      <div class="col-md-2 mt-4"><label style="color: white" ><h5>Policy Id:</h5></label> </div>
+                    <div class="mt-4">
+                        <input type="text" name="policy_id" [(ngModel)]="regpay.policy_id" placeholder="Enter your Policy Id" class="form-control " required>
+                    </div>
+                 </div>
+            </div>      
+
+            <div class="btn-group mt-3">
+                <button type="submit" (click)="registerpay()" class="btn btn-success">Submit</button>
+              </div>
+            </form>  
           <!---heading-->
-              <header class="heading"> Direct Pay</header><hr>
+              <header class="heading">Registered Pay</header><hr>
            <!---Form starting--> 
            <div class="row">
             <!--- For Policy Id-->
@@ -19,24 +38,10 @@
                    </div>
               </div>  
   
-              <!--- For Policy Id-->
-   <div class="col-sm-12 mt-3">
-      <div class="row justify-content-center">
-              <div class="form-group">
-                  <label for="due_date">Due Date:</label>
-                  <input type="date" [(ngModel)]="regpay.due_date" placeholder="Due Date" name="due_date" class="form-control" id="due_date">
-                </div>
+             
+      
               
-               <!--- For Premium Amount-->
-               <div class="col-sm-12 mt-3">
-                  <div class="row justify-content-center">
-                
-                    <div class="col-md-4"><label style="color: white" ><h5>*Premium Amount :</h5></label> </div>
-                  <div class="col-md-4">
-                      <input type="text" [(ngModel)]="regpay.premium_amount" name="premium_amount" id="premiumAmount" placeholder="Premium Amount" class="form-control ">
-                  </div>
-               </div>
-          </div>            
+                 
 
                
 
@@ -71,7 +76,7 @@
 
 
 <div class="container mt-3 mb-3">
-  <button type="submit" (click)="makepayment()" class=" btn btn-success btn-block">Pay</button>
+  <button type="submit" (click)="makePayment()" class=" btn btn-success btn-block">Pay</button>
   <button type="reset" class="btn btn-danger btn-block">Reset</button>
 
 </div>

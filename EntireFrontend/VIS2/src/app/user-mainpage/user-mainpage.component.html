@@ -5,10 +5,10 @@
 
   <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-     
-      <a class="nav-item nav-link active" [routerLink]="['usermain']" >Pay Premium</a>
-      <a class="nav-item nav-link" [routerLink]="['claimpolicy']">Claim Policy</a>
-      <a class="nav-item nav-link" [routerLink]="['cancelpolicy']">Cancel Policy</a>
+  
+      <a class="nav-item nav-link active" (click)="paypremium()" >Pay Premium</a>
+      <a class="nav-item nav-link" (click)="claimpolicy()" >Claim Policy</a>
+      <a class="nav-item nav-link" (click)="cancelpolicy()">Cancel Policy</a>
       <a class="nav-item nav-link" [routerLink]="['']">Logout</a>
      
     </div>
@@ -27,17 +27,20 @@
 
 <div class="container mt-5">
   <div class="d-flex justify-content-center h-100">
-    <div class="btn-group btn-group-justified">
-        <div class="btn-group col-md-3 ">
-          <button id="new_policy"  (click)="directpay()" class="btn btn-primary rounded">Direct Pay</button>
+    <div class="row btn-group btn-group-justified">
+        <div class="btn-group mt-3">
+            <button (click)="policylist()" class="btn btn-primary rounded">List of Policies</button>
+          </div>
+        <div class="btn-group ml-4 mt-3">
+          <button  (click)="directpay()" class="btn btn-primary rounded">Direct Pay</button>
         </div>
-        <div class="btn-group col-md-4">
+        <div class="btn-group ml-4 mt-3">
           <button   (click)="registeredpay()" class="btn btn-primary rounded">Registered Pay</button>
         </div>
-        <div class="btn-group col-md-4">
+        <div class="btn-group ml-4 mt-3">
             <button   (click)="paiddetails()" class="btn btn-primary rounded">Direct Pay Details</button>
           </div>
-          <div class="btn-group col-md-5">
+          <div class="btn-group ml-4 mt-3">
             <button   (click)="regpaiddetails()" class="btn btn-primary rounded">Registered Pay Details</button>
           </div>
         

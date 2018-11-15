@@ -17,6 +17,12 @@ import { DirectPayComponent } from './direct-pay/direct-pay.component';
 import { RegisteredPayComponent } from './registered-pay/registered-pay.component';
 import { PaidDetailsComponent } from './paid-details/paid-details.component';
 import { RegPaiddetailsComponent } from './reg-paiddetails/reg-paiddetails.component';
+import { CustPolicylistComponent } from './cust-policylist/cust-policylist.component';
+import { ClaimMainpageComponent } from './claim-mainpage/claim-mainpage.component';
+import { AccidentAddComponent } from './accident-add/accident-add.component';
+import { AccidentListComponent } from './accident-list/accident-list.component';
+import { TheftAddComponent } from './theft-add/theft-add.component';
+import { TheftListComponent } from './theft-list/theft-list.component';
 
 
 @NgModule({
@@ -33,7 +39,13 @@ import { RegPaiddetailsComponent } from './reg-paiddetails/reg-paiddetails.compo
     DirectPayComponent,
     RegisteredPayComponent,
     PaidDetailsComponent,
-    RegPaiddetailsComponent
+    RegPaiddetailsComponent,
+    CustPolicylistComponent,
+    ClaimMainpageComponent,
+    AccidentAddComponent,
+    AccidentListComponent,
+    TheftAddComponent,
+    TheftListComponent
   ],
   imports: [
     BrowserModule,

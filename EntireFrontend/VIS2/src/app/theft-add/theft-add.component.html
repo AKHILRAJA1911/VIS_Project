@@ -1,0 +1,123 @@
+
+<app-claim-mainpage></app-claim-mainpage>
+
+<div id="block" class="container mt-5">
+
+
+
+    <form>
+          <div class="container1">
+
+              <form>
+                  <div class="">
+                      <div class="row justify-content-center">
+                    
+                        <div class="col-md-2 mt-4"><label style="color: white" ><h5>Policy Id:</h5></label> </div>
+                      <div class="mt-4">
+                          <input type="text" name="policy_id" [(ngModel)]="theft.policy_id" placeholder="Enter your Policy Id" class="form-control " required>
+                      </div>
+                   </div>
+              </div>            
+              
+             
+                <div class="btn-group mt-3">
+                  <button type="submit" (click)="theftcheck()" class="btn btn-success">Submit</button>
+                </div>
+              </form>
+
+
+            <!---heading-->
+                <header class="heading"> Theft Claim</header><hr>
+             <!---Form starting--> 
+             <div class="row">
+
+              <!--- For Customer Id-->
+              <div class="col-sm-12">
+                  <div class="row justify-content-center">
+                
+                    <div class="col-md-4"><label style="color: white" ><h5>Customer Id :</h5></label> </div>
+                  <div class="col-md-4">
+                      <input type="text" [(ngModel)]="theft.customer_id" name="customer_id"  placeholder="Customer Id" class="form-control " required>
+                  </div>
+               </div>
+          </div>  
+          
+
+
+
+              <!--- For Policy Id-->
+                 <div class="col-sm-12 mt-3">
+                        <div class="row justify-content-center">
+                      
+                          <div class="col-md-4"><label style="color: white" ><h5>Policy Id :</h5></label> </div>
+                        <div class="col-md-4">
+                            <input type="text" [(ngModel)]="theft.policy_id" name="policy_id"  placeholder="Policy Id" class="form-control " required>
+                        </div>
+                     </div>
+                </div>  
+                
+             
+              <!--- For Date of theft-->
+              <div class="col-sm-12 mt-3">
+                  <div class="row justify-content-center">
+                
+                    <div class="col-md-4"><label style="color: white" ><h5>Date Of Theft :</h5></label> </div>
+                  <div class="col-md-4">
+                      <input type="date" [(ngModel)]="theft.theft_date" name="theft_date"   class="form-control " required>
+                  </div>
+               </div>
+          </div>    
+          
+                <!--- For Date of complaint-->
+                <div class="col-sm-12 mt-3">
+                    <div class="row justify-content-center">
+                  
+                      <div class="col-md-4"><label style="color: white" ><h5>Date Of Complaint :</h5></label> </div>
+                    <div class="col-md-4">
+                        <input type="date" [(ngModel)]="theft.complaint_date" name="complaint_date"   class="form-control " required>
+                    </div>
+                 </div>
+            </div>  
+
+             <!--- For FIR number-->
+             <div class="col-sm-12 mt-3">
+                <div class="row justify-content-center">
+              
+                  <div class="col-md-4"><label style="color: white" ><h5>FIR Number :</h5></label> </div>
+                <div class="col-md-4">
+                    <input type="text" [(ngModel)]="theft.fir_number" name="fir_number"  class="form-control " required>
+                </div>
+             </div>
+        </div>            
+
+             <!--- For total_amount-->
+             <div class="col-sm-12 mt-3">
+                <div class="row justify-content-center">
+              
+                  <div class="col-md-4"><label style="color: white" ><h5>Total Amount :</h5></label> </div>
+                <div class="col-md-4">
+                    <input type="text" [(ngModel)]="theft.total_amount" name="total_amount"  class="form-control " required>
+                </div>
+             </div>
+        </div>   
+         
+    
+           
+
+
+<div class="container mt-3 mb-3">
+    <button type="submit" (click)="savetheft()" class=" btn btn-success btn-block">Claim</button>
+    <button type="reset" class="btn btn-danger btn-block">Reset</button>
+
+  </div>
+
+
+
+
+
+
+</div>	 
+
+</div>
+</form>  
+</div>     

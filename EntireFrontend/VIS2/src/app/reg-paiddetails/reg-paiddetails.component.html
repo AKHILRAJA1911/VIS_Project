@@ -1,3 +1,66 @@
-<p>
-  reg-paiddetails works!
-</p>
+<app-user-mainpage></app-user-mainpage>
+
+<div id="block" class="mt-5">
+
+    
+   
+ 
+    <div class="container1">
+      <!---heading-->
+
+      
+          <form (ngSubmit)="onSubmit()">
+              <div class="">
+                  <div class="row justify-content-center">
+                
+                    <div class="col-md-2 mt-4"><label style="color: white" ><h5>Policy Id:</h5></label> </div>
+                  <div class="mt-4">
+                      <input type="text" name="policy_id" [(ngModel)]="policy_id" placeholder="Enter your Policy Id" class="form-control " required>
+                  </div>
+               </div>
+          </div>            
+          
+         
+            <div class="btn-group mt-3">
+              <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+          </form>
+        
+
+          <header class="heading">Registered Pay Details</header><hr>
+          <div class="card">
+              <div class="card-header"></div>
+              <div class="card-body">
+    
+                <table class="table table-responsive table-sm table-bordered ">
+  
+     
+      <tr>
+       
+        <th>Policy Id</th>
+        <th>Payment Id</th>
+        <th>Premium Amount</th>
+        <th>Due Date</th>
+        <th>Payment Date</th>
+        <th>Payment Mode</th>
+        <th>Amount Paid</th>
+      
+      </tr>
+    
+      <tr *ngFor="let regpay of regpays">
+        <td>{{regpay.policy_id}}</td>
+        <td>{{regpay.payment_id}}</td>
+        <td>{{regpay.premium_amount}}</td>
+        <td>{{regpay.due_date}}</td>
+        <td>{{regpay.paid_date}}</td>
+        <td>{{regpay.payment_mode}}</td>
+        <td>{{regpay.pay_amount}}</td>  
+        
+  
+      </tr>
+     
+    </table>
+    </div>
+    </div>
+    </div>
+    </div>
