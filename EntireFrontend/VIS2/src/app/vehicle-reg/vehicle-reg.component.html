@@ -7,9 +7,9 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
       <div class="navbar-nav">
        
-        <a class="nav-item nav-link active" [routerLink]="['vehiclereg']">Vehicle Registration</a>
-        <a class="nav-item nav-link" href="#">Claims</a>
-        <a class="nav-item nav-link" href="#">Cancel Policy</a>
+        <a class="nav-item nav-link active" (click)="vehiclereg()" >Vehicle Registration</a>
+        <a class="nav-item nav-link" (click)="claims()" >Claims</a>
+        <a class="nav-item nav-link" (click)="cancelpolicies()" >Cancel Policy</a>
         <a class="nav-item nav-link" [routerLink]="['']">Logout</a>
        
       </div>
@@ -19,10 +19,7 @@
 
 
 
-<div class="row">
-  <img src="../../assets/images/topimage.jpg" class="col-md-6" height="100%">
-  <img src="../../assets/images/topimage2.jpg" class="col-md-6" height="100%">
-</div>
+
 
 <!--======================  links =======================-->
 
@@ -36,9 +33,7 @@
     <div class="btn-group col-md-4">
       <button id="list_of_policies" type="button" (click)="listpolicy()" class="btn btn-primary rounded">List Of Policies</button>
     </div>
-    <div class="btn-group col-md-5">
-      <button id="update_policy" type="button" (click)="updatepolicy()" class="btn btn-primary rounded">Update Policy</button>
-    </div>
+  
     
   </div>
 </div>

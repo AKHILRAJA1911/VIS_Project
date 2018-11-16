@@ -2,17 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-vehicle-reg',
-  templateUrl: './vehicle-reg.component.html',
-  styleUrls: ['./vehicle-reg.component.css']
+  selector: 'app-claims-mainpage',
+  templateUrl: './claims-mainpage.component.html',
+  styleUrls: ['./claims-mainpage.component.css']
 })
-export class VehicleRegComponent implements OnInit {
+export class ClaimsMainpageComponent implements OnInit {
 
   constructor(private route:Router) { }
 
   ngOnInit() {
   }
-
+ 
   vehiclereg(){
     this.route.navigate(['vehiclereg']);
   }
@@ -27,14 +27,14 @@ export class VehicleRegComponent implements OnInit {
 
 
 
-  newpolicy(){
-    this.route.navigate(['addpolicy']);
+
+  accidentclaimslist(){
+    this.route.navigate(['accidentclaimslist']);
   }
-  listpolicy(){
-    this.route.navigate(['listallpolicies']);
+
+  theftclaimslist(){
+    this.route.navigate(['theftclaimslist']);
   }
-updatepolicy(){
-  this.route.navigate(['updatepolicies']);
-}
+
 
 }

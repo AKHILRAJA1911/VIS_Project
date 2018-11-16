@@ -1,0 +1,45 @@
+<app-cancelpolicies-mainpage></app-cancelpolicies-mainpage>
+
+<div id="block" class="mt-5">
+
+  <div class="container1">
+
+      <header class="heading">Cancellation Details</header><hr>
+      <div class="card">
+          <div class="card-header"></div>
+          <div class="card-body">
+
+            <table class="table table-responsive table-sm table-bordered ">
+
+ 
+  <tr>
+    <th>Customer Id</th>
+    <th>Policy Id</th>
+    <th>Cancellation Id</th>
+    <th>Total Amount</th>
+    <th>Registered Date</th>
+    <th>Last Paid Date</th>
+    <th>Cancelled Date</th>
+    <th>Withdraw Amount</th>
+    <th>Status</th>
+  </tr>
+
+  <tr *ngFor="let cancel of cancels">
+    <td>{{cancel.customer_id}}</td>
+    <td>{{cancel.policy_id}}</td>
+    <td>{{cancel.cancel_id}}</td>
+    <td>{{cancel.total_amount}}</td>
+    <td>{{cancel.registered_date}}</td>
+    <td>{{cancel.last_paid_date}}</td>
+    <td>{{cancel.cancel_date}}</td>  
+    <td>{{cancel.withdraw_amount}}</td> 
+    <td *ngIf='!result'><button class="btn btn-danger" (click)="result='delete'"  >Delete</button></td> 
+    <td *ngIf='result'><b> {{result=='delete'?'Deleted':'Rejected'}} </b></td>
+
+  </tr>
+ 
+</table>
+</div>
+</div>
+</div>
+</div>

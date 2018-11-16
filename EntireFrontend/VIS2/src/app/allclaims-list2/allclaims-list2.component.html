@@ -1,0 +1,47 @@
+<app-claims-mainpage></app-claims-mainpage>
+
+<div id="block" class="mt-5">
+
+  <div class="container1">
+
+<header class="heading">Theft Claim Details</header><hr>
+<div class="card">
+    <div class="card-header"></div>
+    <div class="card-body">
+
+      <table class="table table-responsive table-sm table-bordered ">
+
+
+<tr>
+<th>Customer Id</th>
+<th>Policy Id</th>
+<th>Claim Id</th>
+<th>Total Amount</th>
+<th>Date Of Theft</th>
+<th>Date Of Complaint</th>
+<th>FIR Number</th>
+<th>Claim Amount</th>
+<th>Status</th>
+</tr>
+
+<tr *ngFor="let theft of thefts; let i=index;">
+<td>{{theft.customer_id}}</td>
+<td>{{theft.policy_id}}</td>
+<td>{{theft.claim_id}}</td>
+<td>{{theft.total_amount}}</td>
+<td>{{theft.theft_date}}</td>
+<td>{{theft.complaint_date}}</td>
+<td>{{theft.fir_number}}</td>  
+<td>{{theft.claim_amount}}</td> 
+<td *ngIf='!result'><button class="btn btn-success" (click)="submit('approve', i)"  >Approve</button> <button class="btn btn-danger ml-4" (click)="submit2('reject', i)" >Reject</button></td> 
+<td *ngIf='result'><b> {{result=='approve'?'Approved':'Rejected'}} </b></td>
+
+
+
+</tr>
+
+</table>
+</div>
+</div>
+</div>
+</div>

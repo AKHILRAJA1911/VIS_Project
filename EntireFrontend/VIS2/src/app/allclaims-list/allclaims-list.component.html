@@ -1,0 +1,47 @@
+<app-claims-mainpage></app-claims-mainpage>
+
+<div id="block" class="mt-5">
+
+    <div class="container1">
+
+
+<header class="heading">Accident Claim Details</header><hr>
+<div class="card">
+    <div class="card-header"></div>
+    <div class="card-body">
+
+      <table class="table table-responsive table-sm table-bordered ">
+
+
+<tr>
+<th>Customer Id</th>
+<th>Policy Id</th>
+<th>Claim Id</th>
+<th>Total Amount</th>
+<th>Accident Type</th>
+<th>Weightage</th>
+<th>Claim Amount</th>
+<th>Status</th>
+</tr>
+
+<tr *ngFor="let accident of accidents; let i=index;">
+<td>{{accident.customer_id}}</td>
+<td>{{accident.policy_id}}</td>
+<td>{{accident.claim_id}}</td>
+<td>{{accident.total_amount}}</td>
+<td>{{accident.accident_type}}</td>
+<td>{{accident.weightage}}</td>
+<td>{{accident.claim_amount}}</td>  
+<td *ngIf='!result'><button class="btn btn-success" (click)="Accidentsubmit('approve', i)">Approve</button> <button class="btn btn-danger ml-4" (click)="Accidentsubmit2('reject', i)" >Reject</button></td> 
+<td *ngIf='result'><b> {{result=='approve'?'Approved':'Rejected'}} </b></td>
+</tr>
+
+</table>
+</div>
+</div>
+</div>
+</div>
+
+
+
+

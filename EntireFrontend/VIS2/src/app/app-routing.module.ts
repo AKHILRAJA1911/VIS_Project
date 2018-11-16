@@ -19,6 +19,15 @@ import { AccidentAddComponent } from './accident-add/accident-add.component';
 import { AccidentListComponent } from './accident-list/accident-list.component';
 import { TheftAddComponent } from './theft-add/theft-add.component';
 import { TheftListComponent } from './theft-list/theft-list.component';
+import { CancelAddComponent } from './cancel-add/cancel-add.component';
+import { CancelListComponent } from './cancel-list/cancel-list.component';
+import { CancelMainpageComponent } from './cancel-mainpage/cancel-mainpage.component';
+import { ClaimsMainpageComponent } from './claims-mainpage/claims-mainpage.component';
+import { CancelpoliciesMainpageComponent } from './cancelpolicies-mainpage/cancelpolicies-mainpage.component';
+import { AllclaimsListComponent } from './allclaims-list/allclaims-list.component';
+import { AllclaimsList2Component } from './allclaims-list2/allclaims-list2.component';
+import { AllcancelsListComponent } from './allcancels-list/allcancels-list.component';
+import { AllcancelsList2Component } from './allcancels-list2/allcancels-list2.component';
 
 
 const routes: Routes = [
@@ -40,7 +49,16 @@ const routes: Routes = [
   {path:'accident',component:AccidentAddComponent},
   {path:'accidentlist',component:AccidentListComponent},
   {path:'theft',component:TheftAddComponent},
-  {path:'theftlist',component:TheftListComponent}
+  {path:'theftlist',component:TheftListComponent},
+  {path:'cancelpolicy',component:CancelMainpageComponent},
+  {path:'addcancel',component:CancelAddComponent},
+  {path:'cancellist',component:CancelListComponent},
+  {path:'claims',component:ClaimsMainpageComponent},
+  {path:'cancelpolicies',component:CancelpoliciesMainpageComponent},
+  {path:'accidentclaimslist',component:AllclaimsListComponent},
+  {path:'theftclaimslist',component:AllclaimsList2Component},
+  {path:'cancelrequest',component:AllcancelsListComponent},
+  {path:'duecancellation',component:AllcancelsList2Component}
   
 ];
 @NgModule({

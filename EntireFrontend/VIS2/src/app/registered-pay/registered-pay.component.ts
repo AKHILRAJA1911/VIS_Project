@@ -29,7 +29,7 @@ makePayment() {
         alert(data);
       });
 
-};
+}
 
 
 

@@ -1,0 +1,67 @@
+<app-cancel-mainpage></app-cancel-mainpage>
+
+<div id="block" class="mt-5">
+
+    
+   
+ 
+  <div class="container1">
+    <!---heading-->
+
+    
+        <form (ngSubmit)="onSubmit()">
+            <div class="">
+                <div class="row justify-content-center">
+              
+                  <div class="col-md-2 mt-4"><label style="color: white" ><h5>Customer Id:</h5></label> </div>
+                <div class="mt-4">
+                    <input type="text" name="customer_id" [(ngModel)]="customer_id" placeholder="Enter your Customer Id" class="form-control " required>
+                </div>
+             </div>
+        </div>            
+        
+       
+          <div class="btn-group mt-3">
+            <button type="submit"  class="btn btn-success">Submit</button>
+          </div>
+        </form>
+      
+
+        <header class="heading">Cancellation Details</header><hr>
+        <div class="card">
+            <div class="card-header"></div>
+            <div class="card-body">
+  
+              <table class="table table-responsive table-sm table-bordered ">
+
+   
+    <tr>
+      <th>Customer Id</th>
+      <th>Policy Id</th>
+      <th>Cancellation Id</th>
+      <th>Total Amount</th>
+      <th>Registered Date</th>
+      <th>Last Paid Date</th>
+      <th>Cancelled Date</th>
+      <th>Withdraw Amount</th>
+      <th>Status</th>
+    </tr>
+  
+    <tr *ngFor="let cancel of cancels">
+      <td>{{cancel.customer_id}}</td>
+      <td>{{cancel.policy_id}}</td>
+      <td>{{cancel.cancel_id}}</td>
+      <td>{{cancel.total_amount}}</td>
+      <td>{{cancel.registered_date}}</td>
+      <td>{{cancel.last_paid_date}}</td>
+      <td>{{cancel.cancel_date}}</td>  
+      <td>{{cancel.withdraw_amount}}</td> 
+      <td>{{cancel.status}}</td> 
+
+    </tr>
+   
+  </table>
+  </div>
+  </div>
+  </div>
+  </div>

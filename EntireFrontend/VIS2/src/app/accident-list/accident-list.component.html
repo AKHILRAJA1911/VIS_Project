@@ -1,3 +1,65 @@
-<p>
-  accident-list works!
-</p>
+<app-claim-mainpage></app-claim-mainpage>
+
+<div id="block" class="mt-5">
+
+    
+   
+ 
+    <div class="container1">
+      <!---heading-->
+
+      
+          <form (ngSubmit)="onSubmit()">
+              <div class="">
+                  <div class="row justify-content-center">
+                
+                    <div class="col-md-2 mt-4"><label style="color: white" ><h5>Customer Id:</h5></label> </div>
+                  <div class="mt-4">
+                      <input type="text" name="customer_id" [(ngModel)]="customer_id" placeholder="Enter your Customer Id" class="form-control " required>
+                  </div>
+               </div>
+          </div>            
+          
+         
+            <div class="btn-group mt-3">
+              <button type="submit" (click)="accidentlist()" class="btn btn-success">Submit</button>
+            </div>
+          </form>
+        
+
+          <header class="heading">Accident Claim Details</header><hr>
+          <div class="card">
+              <div class="card-header"></div>
+              <div class="card-body">
+    
+                <table class="table table-responsive table-sm table-bordered ">
+  
+     
+      <tr>
+        <th>Customer Id</th>
+        <th>Policy Id</th>
+        <th>Claim Id</th>
+        <th>Total Amount</th>
+        <th>Accident Type</th>
+        <th>Weightage</th>
+        <th>Claim Amount</th>
+        <th>Status</th>
+      </tr>
+    
+      <tr *ngFor="let accident of accidents">
+        <td>{{accident.customer_id}}</td>
+        <td>{{accident.policy_id}}</td>
+        <td>{{accident.claim_id}}</td>
+        <td>{{accident.total_amount}}</td>
+        <td>{{accident.accident_type}}</td>
+        <td>{{accident.weightage}}</td>
+        <td>{{accident.claim_amount}}</td>  
+        <td>{{accident.status}}</td> 
+  
+      </tr>
+     
+    </table>
+    </div>
+    </div>
+    </div>
+    </div>

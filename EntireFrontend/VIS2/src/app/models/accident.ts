@@ -1,6 +1,6 @@
 export class Accident {
 
-     claim_id:String;
+     claim_id:string;
 	 total_amount:String;
 	 accident_type:String;
 	 weightage:String;

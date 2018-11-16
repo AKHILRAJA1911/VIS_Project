@@ -6,6 +6,9 @@ import { Vehicle } from './models/vehicle';
 import { Observable } from 'rxjs';
 import { Customer } from './models/customer';
 import { Directpay } from './models/directpay';
+import { Accident } from './models/accident';
+import { Theft } from './models/theft';
+import { Cancel } from './models/cancel';
 
 
 const httpOptions = {
@@ -104,5 +107,77 @@ savetheft(theft){
   return this.http.post('http://localhost:1216/vims/theftclaim/save',theft,{ responseType: 'text' as 'text'});
 }
 
+accidentlist(customer_id:string):Observable<any>{
+  return this.http.get('http://localhost:1216/vims/accidentclaim/findaccidentclaimsbycustid/'+`${customer_id}`);
+}
+
+theftlist(customer_id:string):Observable<any>{
+  return this.http.get('http://localhost:1216/vims/theftclaim/findtheftclaimsbycustid/'+`${customer_id}`);
+}
+
+// cancel check
+public cancelcheck(cancel){
+  return this.http.post('http://localhost:1216/vims/cancel/viewCancellation',cancel, { responseType: 'text' as 'text'});
+}
+
+// cancel save
+public savecancel(cancel){
+  return this.http.post('http://localhost:1216/vims/cancel/save',cancel, { responseType: 'text' as 'text'});
+}
+
+// cancel list
+cancellist(customer_id:string):Observable<any>{
+  return this.http.get('http://localhost:1216/vims/cancel/customer/'+`${customer_id}`);
+}
+
+// all accident claim policies
+
+accidentpolicies(){
+  return this.http.get<Accident[]>('http://localhost:1216/vims/accidentclaim/findall');
+}
+
+// all theft claim policies
+theftpolicies(){
+  return this.http.get<Theft[]>('http://localhost:1216/vims/theftclaim/findall');
+}
+
+// all cancel policies
+cancelpolicy(){
+  return this.http.get<Cancel[]>('http://localhost:1216/vims/cancel/findall/');
+}
+
+// user request cancel policies
+cancelreqpolicy(){
+  return this.http.get<Cancel[]>('http://localhost:1216/vims/cancel/findallduevehicles/');
+}
+
+// set status to Approve
+setStatus(claim_id:string):Observable<any>{
+  return this.http.get('http://localhost:1216/vims/theftclaim/approve/'+claim_id,{ responseType: 'text' as 'text'});
+}
+
+// set status to Reject
+setStatus2(claim_id:string):Observable<any>{
+  return this.http.get('http://localhost:1216/vims/theftclaim/reject/'+claim_id,{ responseType: 'text' as 'text'});
+}
+
+// Set status to Approve
+accidentsetStatus(claim_id:string):Observable<any>{
+  return this.http.get('http://localhost:1216/vims/accidentclaim/approve/'+claim_id,{ responseType: 'text' as 'text'});
+}
+
+
+// Set status to Reject
+accidentsetStatus2(claim_id:string):Observable<any>{
+  return this.http.get('http://localhost:1216/vims/accidentclaim/reject/'+claim_id,{ responseType: 'text' as 'text'});
+}
+
+
 
 }
+
+
+
+
+
+

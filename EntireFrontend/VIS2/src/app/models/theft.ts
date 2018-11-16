@@ -1,6 +1,6 @@
 export class Theft {
 
-     claim_id:String;
+     claim_id:string;
 	 total_amount:String;
 	 theft_date:Date;
 	 complaint_date:Date;
